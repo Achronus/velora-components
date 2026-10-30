@@ -1,0 +1,57 @@
+:where(:root),
+[data-theme="green"] {
+  /* ---- surfaces and text ---- */
+  --v-main: #0a0f0c;
+  --v-panel: #0e1410;
+  --v-raised: #141b16;
+  --v-viewport: #0b100d;
+  --v-line: #1b241e;
+  --v-line-soft: #161d18;
+  --v-line-strong: #2a352e;
+  --v-text: #e6ede8;
+  --v-dim: #a9b6ae;
+  --v-mute: #6f7f75; /* 4.6:1 on main */
+
+  /* ---- brand-driven status ---- */
+  --v-nominal: #5fbf85;
+  --v-nominal-fg: #8fd9ac;
+  --v-nominal-fill: #1c3d2a;
+  --v-live: #3fb3c9;
+  --v-live-fg: #77cfe0;
+  --v-data: #7ed3a0;
+
+  /* ---- shadcn ---- */
+  --background: #0a0f0c;
+  --foreground: #e6ede8;
+  --card: #0e1410;
+  --card-foreground: #e6ede8;
+  --popover: #111813;
+  --popover-foreground: #e6ede8;
+  --primary: #e6ede8;
+  --primary-foreground: #0a0f0c;
+  --secondary: #18201b;
+  --secondary-foreground: #e6ede8;
+  --muted: #151c17;
+  --muted-foreground: #8a988f;
+  --accent: #1d2620;
+  --accent-foreground: #e6ede8;
+  --border: #1d2620;
+  --input: #2a352e;
+  --ring: #8fd9ac;
+
+  /* series: crop / growth, water, light, heat, other */
+  --chart-1: #7ed3a0;
+  --chart-2: #6faee0;
+  --chart-3: #d9c56b;
+  --chart-4: #e58a74;
+  --chart-5: #b9a6e8;
+
+  --sidebar: #0a0f0c;
+  --sidebar-foreground: #e6ede8;
+  --sidebar-primary: #e6ede8;
+  --sidebar-primary-foreground: #0a0f0c;
+  --sidebar-accent: #151c17;
+  --sidebar-accent-foreground: #e6ede8;
+  --sidebar-border: #1b241e;
+  --sidebar-ring: #8fd9ac;
+}

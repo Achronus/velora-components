@@ -1,0 +1,56 @@
+:where(:root),
+[data-theme="blue"] {
+  /* ---- surfaces and text ---- */
+  --v-main: #0a0c0f; /* page */
+  --v-panel: #0e1115; /* cards, side panels */
+  --v-raised: #141920; /* selected row, hover */
+  --v-viewport: #0b0e12; /* 3D / canvas wells */
+  --v-line: #1c2128; /* dividers, header rule */
+  --v-line-soft: #171b21; /* row separators inside cards */
+  --v-line-strong: #2c333d; /* outlined buttons, inputs */
+  --v-text: #e7eaee;
+  --v-dim: #a9b1bb; /* secondary text */
+  --v-mute: #6e7781; /* labels, axis ticks (≥4.5:1 on main) */
+
+  /* ---- brand-driven status ---- */
+  --v-nominal: #5aa0e6;
+  --v-nominal-fg: #8cc2f2;
+  --v-nominal-fill: #1d3a57;
+  --v-live: #3fb68b; /* running / live */
+  --v-live-fg: #6fd3a8;
+  --v-data: #7fb2e5; /* default chart line */
+
+  /* ---- shadcn ---- */
+  --background: #0a0c0f;
+  --foreground: #e7eaee;
+  --card: #0e1115;
+  --card-foreground: #e7eaee;
+  --popover: #111419;
+  --popover-foreground: #e7eaee;
+  --primary: #e7eaee;
+  --primary-foreground: #0a0c0f;
+  --secondary: #1a1f26;
+  --secondary-foreground: #e7eaee;
+  --muted: #161a20;
+  --muted-foreground: #8b949e;
+  --accent: #1f242b; /* hover / selected background (menus, command items) */
+  --accent-foreground: #e7eaee;
+  --border: #1f242b;
+  --input: #2c333d;
+  --ring: #8cc2f2;
+
+  --chart-1: #7fb2e5;
+  --chart-2: #9a8fe0;
+  --chart-3: #4fb8c4;
+  --chart-4: #d98bc8;
+  --chart-5: #c7a27a;
+
+  --sidebar: #0a0c0f;
+  --sidebar-foreground: #e7eaee;
+  --sidebar-primary: #e7eaee;
+  --sidebar-primary-foreground: #0a0c0f;
+  --sidebar-accent: #161a20;
+  --sidebar-accent-foreground: #e7eaee;
+  --sidebar-border: #1c2128;
+  --sidebar-ring: #8cc2f2;
+}

@@ -1,0 +1,180 @@
+/*
+ * Velora Components — base stylesheet.
+ *
+ * Holds everything that is the SAME in every Velora app: fonts, variants,
+ * radii, motion, and the mapping from Tailwind utilities (bg-panel,
+ * text-mute, border-warn/40 …) to CSS variables.
+ *
+ * Colour values come from theme file:
+ *   @import "@/velora/themes/[colour].css";
+ *
+ * Why variables: `@theme inline` copies a token's value straight into each
+ * utility. With a literal hex (the old index.css) the colour is baked into
+ * the generated CSS and no theme can change it. With `var(--v-panel)` the
+ * utility reads the variable at runtime, so a theme only sets variables.
+ */
+
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+@import "@fontsource-variable/geist";
+@import "@fontsource-variable/raleway";
+
+/* Scan the package's own components, so apps don't need an @source line
+   pointing into node_modules. Paths are relative to this file. */
+@source "../components";
+@source inline("bg-run-{1..6}");
+
+@custom-variant dark (&:where(:root, :root *));
+@custom-variant with-sidebar (&:has(> [data-slot=page-sidebar]));
+
+@theme inline {
+	/* ---- fonts ---- */
+	--font-heading: "Raleway Variable", sans-serif;
+	--font-sans: "Geist Variable", sans-serif;
+	--font-ibm: "IBM Plex Mono", ui-monospace, monospace;
+
+	/* ---- shadcn tokens ---- */
+	--color-background: var(--background);
+	--color-foreground: var(--foreground);
+	--color-card: var(--card);
+	--color-card-foreground: var(--card-foreground);
+	--color-popover: var(--popover);
+	--color-popover-foreground: var(--popover-foreground);
+	--color-primary: var(--primary);
+	--color-primary-foreground: var(--primary-foreground);
+	--color-secondary: var(--secondary);
+	--color-secondary-foreground: var(--secondary-foreground);
+	--color-muted: var(--muted);
+	--color-muted-foreground: var(--muted-foreground);
+	--color-accent: var(--accent);
+	--color-accent-foreground: var(--accent-foreground);
+	--color-destructive: var(--destructive);
+	--color-border: var(--border);
+	--color-input: var(--input);
+	--color-ring: var(--ring);
+	--color-chart-1: var(--chart-1);
+	--color-chart-2: var(--chart-2);
+	--color-chart-3: var(--chart-3);
+	--color-chart-4: var(--chart-4);
+	--color-chart-5: var(--chart-5);
+	--color-sidebar: var(--sidebar);
+	--color-sidebar-foreground: var(--sidebar-foreground);
+	--color-sidebar-primary: var(--sidebar-primary);
+	--color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+	--color-sidebar-accent: var(--sidebar-accent);
+	--color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+	--color-sidebar-border: var(--sidebar-border);
+	--color-sidebar-ring: var(--sidebar-ring);
+
+	--radius-sm: calc(var(--radius) * 0.6);
+	--radius-md: calc(var(--radius) * 0.8);
+	--radius-lg: var(--radius);
+	--radius-xl: calc(var(--radius) * 1.4);
+	--radius-2xl: calc(var(--radius) * 1.8);
+	--radius-3xl: calc(var(--radius) * 2.2);
+	--radius-4xl: calc(var(--radius) * 2.6);
+
+	/* ---- Velora surfaces and text (values: theme file) ---- */
+	--color-main: var(--v-main);
+	--color-panel: var(--v-panel);
+	--color-raised: var(--v-raised);
+	--color-viewport: var(--v-viewport);
+	--color-line: var(--v-line);
+	--color-line-soft: var(--v-line-soft);
+	--color-line-strong: var(--v-line-strong);
+	--color-text: var(--v-text);
+	--color-dim: var(--v-dim);
+	--color-mute: var(--v-mute);
+
+	/* ---- brand-driven status ---- */
+	--color-nominal: var(--v-nominal);
+	--color-nominal-fg: var(--v-nominal-fg);
+	--color-nominal-fill: var(--v-nominal-fill);
+	--color-live: var(--v-live);
+	--color-live-fg: var(--v-live-fg);
+	--color-data: var(--v-data);
+
+	/* ---- shared status (same meaning in every app) ---- */
+	--color-warn: var(--v-warn);
+	--color-warn-fg: var(--v-warn-fg);
+	--color-warn-fill: var(--v-warn-fill);
+	--color-alarm: var(--v-alarm);
+	--color-alarm-fg: var(--v-alarm-fg);
+	--color-alarm-fill: var(--v-alarm-fill);
+	--color-model: var(--v-model);
+
+	--color-live-on: var(--v-live);
+	--color-live-off: var(--v-alarm);
+
+	/* ---- run identity chips ---- */
+	--color-run-1: var(--v-run-1);
+	--color-run-2: var(--v-run-2);
+	--color-run-3: var(--v-run-3);
+	--color-run-4: var(--v-run-4);
+	--color-run-5: var(--v-run-5);
+	--color-run-6: var(--v-run-6);
+
+	/* ---- motion ---- */
+	--animate-live: live 1.2s ease-in-out infinite;
+	--animate-over-limit: over-limit 1s ease-in-out infinite;
+
+	@keyframes live {
+		50% {
+			opacity: 0.35;
+		}
+	}
+	@keyframes over-limit {
+		50% {
+			stroke-opacity: 0.25;
+		}
+	}
+}
+
+/*
+ * Shared values. Threshold colouring and run identity mean the same thing in
+ * every Velora app, so they live here rather than in each theme. `:where()`
+ * keeps specificity at zero: any theme file may still override them.
+ */
+:where(:root) {
+	color-scheme: dark; /* native scrollbars, date pickers, selects */
+	--radius: 0.5rem;
+
+	--v-warn: #e3a23b;
+	--v-warn-fg: #f0b85a;
+	--v-warn-fill: #4a3510;
+	--v-alarm: #e5534b;
+	--v-alarm-fg: #f07a72;
+	--v-alarm-fill: #4c1a17;
+	--v-model: #c79be6; /* unvalidated model / fidelity tag */
+
+	--v-run-1: #9a8fe0;
+	--v-run-2: #4fb8c4;
+	--v-run-3: #d98bc8;
+	--v-run-4: #a8c66c;
+	--v-run-5: #c7a27a;
+	--v-run-6: #8fa3b8;
+
+	--destructive: var(--v-alarm);
+}
+
+@layer base {
+	* {
+		@apply border-border outline-ring/50;
+	}
+	html {
+		@apply font-sans;
+	}
+	body {
+		@apply bg-background text-foreground antialiased;
+	}
+	::selection {
+		background: color-mix(in oklab, var(--v-nominal) 35%, transparent);
+	}
+	:focus-visible {
+		outline: 2px solid var(--ring);
+		outline-offset: 2px;
+	}
+}
