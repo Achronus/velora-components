@@ -1,0 +1,57 @@
+:where(:root),
+[data-theme="azure"] {
+  /* ---- surfaces and text ---- */
+  --v-main: #090c12;
+  --v-panel: #0d121a;
+  --v-raised: #131a24;
+  --v-viewport: #0a0e15;
+  --v-line: #1a2230;
+  --v-line-soft: #151c27;
+  --v-line-strong: #283346;
+  --v-text: #e6ebf2;
+  --v-dim: #a9b4c4;
+  --v-mute: #707d91; /* 4.7:1 on main */
+
+  /* ---- brand-driven status ---- */
+  --v-nominal: #4d9bf0;
+  --v-nominal-fg: #8cc2ff;
+  --v-nominal-fill: #16385f;
+  --v-live: #3fb68b;
+  --v-live-fg: #6fd3a8;
+  --v-data: #7db8ff;
+
+  /* ---- shadcn ---- */
+  --background: #090c12;
+  --foreground: #e6ebf2;
+  --card: #0d121a;
+  --card-foreground: #e6ebf2;
+  --popover: #10161f;
+  --popover-foreground: #e6ebf2;
+  --primary: #e6ebf2;
+  --primary-foreground: #090c12;
+  --secondary: #182030;
+  --secondary-foreground: #e6ebf2;
+  --muted: #141a25;
+  --muted-foreground: #8994a6;
+  --accent: #1c2534;
+  --accent-foreground: #e6ebf2;
+  --border: #1c2534;
+  --input: #283346;
+  --ring: #8cc2ff;
+
+  /* series: solar, battery, grid import, export, heat */
+  --chart-1: #f2c14e;
+  --chart-2: #7db8ff;
+  --chart-3: #b49cf0;
+  --chart-4: #6fd3a8;
+  --chart-5: #e58a74;
+
+  --sidebar: #090c12;
+  --sidebar-foreground: #e6ebf2;
+  --sidebar-primary: #e6ebf2;
+  --sidebar-primary-foreground: #090c12;
+  --sidebar-accent: #141a25;
+  --sidebar-accent-foreground: #e6ebf2;
+  --sidebar-border: #1a2230;
+  --sidebar-ring: #8cc2ff;
+}
