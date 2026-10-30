@@ -1,7 +1,6 @@
 /* App entry stylesheet */
-@import "@/themes/base.css";
+@import "./themes/base.css";
 
-@import "@/themes/blue.css";
-@import "@/themes/azure.css";
-@import "@/themes/green.css";
-
+@import "./themes/blue.css";
+@import "./themes/azure.css";
+@import "./themes/green.css";
