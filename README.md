@@ -1,6 +1,6 @@
 # Velora Components
 
-[Version]: v0.1.1
+[Version]: v0.1.2
 
 A React.js component library for Velora's frontend.
 
@@ -28,16 +28,16 @@ Read more about the items in the [documentation](#).
 The library is installed from GitHub, not npm. Pin it to a release tag so every app builds against a known version:
 
 ```bash
-npm install git+https://github.com/Achronus/velora-components.git#v0.1.1
+npm install git+https://github.com/Achronus/velora-components.git#v0.1.2
 # or
-pnpm add git+https://github.com/Achronus/velora-components.git#v0.1.1
+pnpm add git+https://github.com/Achronus/velora-components.git#v0.1.2
 ```
 
 This adds the following to your `package.json`:
 
 ```json
 "dependencies": {
-  "@velora/components": "git+https://github.com/Achronus/velora-components.git#v0.1.1"
+  "@velora/components": "git+https://github.com/Achronus/velora-components.git#v0.1.2"
 }
 ```
 
