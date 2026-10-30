@@ -17,9 +17,24 @@ export default defineConfig([
     ],
     languageOptions: {
       globals: globals.browser,
+      parserOptions: {
+        tsconfigRootDir: import.meta.dirname,
+      }
     },
     rules: {
       'react-refresh/only-export-components': 'off',
+      'no-restricted-imports': [
+        'error',
+        {
+          patterns: [
+            {
+              group: ['@/*'],
+              message:
+                'Use a relative import. In a source-shipped library, @/ resolves to the consuming app.',
+            },
+          ],
+        },
+      ],
     },
   },
 ])

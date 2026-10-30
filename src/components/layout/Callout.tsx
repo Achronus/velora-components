@@ -1,6 +1,6 @@
-import { cn } from "@/lib/utils"
 import { cva, type VariantProps } from "class-variance-authority"
 import { createContext, useContext, type ComponentProps } from "react"
+import { cn } from "../../lib/utils"
 
 type CalloutTone = "live" | "warn" | "alarm" | "neutral"
 

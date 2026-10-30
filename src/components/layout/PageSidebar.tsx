@@ -1,5 +1,5 @@
-import { cn } from "@/lib/utils"
 import type { ComponentProps } from "react"
+import { cn } from "../../lib/utils"
 
 const PageSidebar = ({ className, ...props }: ComponentProps<"aside">) => {
   return (

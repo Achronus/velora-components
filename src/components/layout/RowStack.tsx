@@ -1,7 +1,7 @@
-import { ROW_SIZE } from "@/lib/constants"
-import { cn } from "@/lib/utils"
 import { cva, type VariantProps } from "class-variance-authority"
 import type { ComponentProps } from "react"
+import { ROW_SIZE } from "../../lib/constants"
+import { cn } from "../../lib/utils"
 
 const rowStackVariants = cva("flex min-w-0 flex-col gap-3.5", {
   variants: { size: ROW_SIZE },

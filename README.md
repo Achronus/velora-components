@@ -1,5 +1,7 @@
 # Velora Components
 
+[Version]: v0.1.1
+
 A React.js component library for Velora's frontend.
 
 It holds the layout kit, charts and colour themes shared by every Velora app, keeping them consistent and easy to update.
@@ -26,16 +28,16 @@ Read more about the items in the [documentation](#).
 The library is installed from GitHub, not npm. Pin it to a release tag so every app builds against a known version:
 
 ```bash
-npm install git+https://github.com/Achronus/velora-components.git#v0.1.0
+npm install git+https://github.com/Achronus/velora-components.git#v0.1.1
 # or
-pnpm add git+https://github.com/Achronus/velora-components.git#v0.1.0
+pnpm add git+https://github.com/Achronus/velora-components.git#v0.1.1
 ```
 
 This adds the following to your `package.json`:
 
 ```json
 "dependencies": {
-  "@velora/components": "github:Achronus/velora-components#v0.1.0"
+  "@velora/components": "git+https://github.com/Achronus/velora-components.git#v0.1.1"
 }
 ```
 
