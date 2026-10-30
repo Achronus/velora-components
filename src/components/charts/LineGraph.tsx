@@ -1,5 +1,5 @@
-import { Progress } from "@/components/ui/progress"
-import { cn } from "@/lib/utils"
+import { cn } from "../../lib/utils"
+import { Progress } from "../ui/progress"
 
 type Bands = {
   y: number

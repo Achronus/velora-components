@@ -1,7 +1,7 @@
-import { ROW_SIZE } from "@/lib/constants"
-import { cn } from "@/lib/utils"
 import { cva, type VariantProps } from "class-variance-authority"
 import { createContext, useContext, useId, type ComponentProps } from "react"
+import { ROW_SIZE } from "../../lib/constants"
+import { cn } from "../../lib/utils"
 
 type SectionVariant = "plain" | "boxed" | "panel" | "bar" | "viewport"
 

@@ -1,5 +1,5 @@
-import { cn } from "@/lib/utils"
 import type { ComponentProps } from "react"
+import { cn } from "../../lib/utils"
 
 const PageHeader = ({ className, ...props }: ComponentProps<"div">) => {
   return (
@@ -68,5 +68,6 @@ export {
   PageHeaderActions,
   PageHeaderDescription,
   PageHeaderMeta,
-  PageHeaderTitle,
+  PageHeaderTitle
 }
+
