@@ -1,6 +1,6 @@
 {
   "name": "@velora/components",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "private": true,
   "type": "module",
   "files": [
@@ -13,9 +13,9 @@
     ".": "./src/index.ts",
     "./layout": "./src/components/layout/index.ts",
     "./charts": "./src/components/charts/index.ts",
-    "./theme": "./src/lib/theme.ts",
     "./styles.css": "./src/styles.css",
-    "./themes/*": "./src/themes/*"
+    "./themes/*": "./src/themes/*",
+    "./theme": "./src/lib/theme.ts"
   },
   "peerDependencies": {
     "@base-ui/react": "^1.9.0",

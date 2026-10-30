@@ -6,7 +6,7 @@
  * text-mute, border-warn/40 …) to CSS variables.
  *
  * Colour values come from theme file:
- *   @import "@/velora/themes/[colour].css";
+ *   @import "./themes/[colour].css";
  *
  * Why variables: `@theme inline` copies a token's value straight into each
  * utility. With a literal hex (the old index.css) the colour is baked into
@@ -22,9 +22,9 @@
 @import "@fontsource-variable/geist";
 @import "@fontsource-variable/raleway";
 
-/* Scan the package's own components, so apps don't need an @source line
-   pointing into node_modules. Paths are relative to this file. */
-@source "../components";
+/* Scan the library's src (components, lib), so apps don't need an
+   @source line pointing into node_modules. Relative to this file. */
+@source "..";
 @source inline("bg-run-{1..6}");
 
 @custom-variant dark (&:where(:root, :root *));
