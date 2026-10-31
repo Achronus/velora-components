@@ -1,7 +1,7 @@
 import type { ComponentProps } from "react";
 import type { LiveStatus } from "../lib/types";
 import { cn } from "../lib/utils";
-import LiveDot from "./LiveDot";
+import { LiveDot } from "./LiveDot";
 import { buttonVariants } from "./ui/button";
 
 const STATUS_STYLE: Record<LiveStatus, string> = {
