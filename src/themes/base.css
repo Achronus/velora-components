@@ -25,7 +25,6 @@
 /* Scan the library's src (components, lib), so apps don't need an
    @source line pointing into node_modules. Relative to this file. */
 @source "..";
-@source inline("bg-run-{1..6}");
 
 @custom-variant dark (&:where(:root, :root *));
 @custom-variant with-sidebar (&:has(> [data-slot=page-sidebar]));
