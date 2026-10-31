@@ -14,8 +14,10 @@ It holds the layout kit, charts and colour themes shared by every Velora app, ke
 | Charts | `LineGraph`, `CellMap` |
 | Generic Components | `LiveDot`, `LiveStatusAnchor`, `Swatch`, `ScopeBreadcrumb`, `FilterToggle`, `FilterToggleGroup` |
 | Search-based Components | `SearchBar`, `SearchDialog` |
+| Hooks | `useDebouncedValue`, `keybindHandler`, `useSearchMenu` |
+| Context + Providers | `SearchMenuContext`, `SearchMenuProvider` |
 | Styles | `styles.css` (fonts, Tailwind setup, token mapping) and one file per colour theme |
-| Helpers | `readToken` for theme colours in JavaScript (canvas, three.js, chart libraries) |
+| Helpers | `readToken` for theme colours in JavaScript (canvas, three.js, chart libraries) + more |
 
 Read more about the items in the [documentation](#).
 
