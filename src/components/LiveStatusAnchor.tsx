@@ -17,7 +17,7 @@ type Props = ComponentProps<"a"> & {
 	noun?: [singular: string, plural: string];
 };
 
-const LiveStatusAnchor = ({
+export const LiveStatusAnchor = ({
 	count,
 	status,
 	isPending = false,
@@ -57,5 +57,3 @@ const LiveStatusAnchor = ({
 		</a>
 	);
 };
-
-export { LiveStatusAnchor };

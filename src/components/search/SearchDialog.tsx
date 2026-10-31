@@ -14,7 +14,7 @@ type Props = {
 	children: React.ReactNode;
 };
 
-const SearchDialog = ({
+export const SearchDialog = ({
 	title,
 	description,
 	open,
@@ -36,5 +36,3 @@ const SearchDialog = ({
 		</Dialog>
 	);
 };
-
-export default SearchDialog;

@@ -1,5 +1,5 @@
 export * from "./LiveDot";
 export * from "./LiveStatusAnchor";
 export * from "./ScopeBreadcrumb";
-export * from "./Chip";
+export * from "./Swatch";
 export * from "./FilterToggle";
