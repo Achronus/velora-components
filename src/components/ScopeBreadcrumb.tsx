@@ -7,7 +7,11 @@ import { Button } from "./ui/button";
 const SEGMENT =
 	"h-7.5 cursor-pointer gap-1.5 px-2 font-mono text-[12.5px] font-normal text-dim";
 
-const ScopeBreadcrumb = ({ startingLabel }: { startingLabel: string }) => {
+export const ScopeBreadcrumb = ({
+	startingLabel,
+}: {
+	startingLabel: string;
+}) => {
 	const { scope, openMenu } = useSearchMenu();
 
 	if (scope.length === 0) {
@@ -54,5 +58,3 @@ const ScopeBreadcrumb = ({ startingLabel }: { startingLabel: string }) => {
 		</nav>
 	);
 };
-
-export default ScopeBreadcrumb;

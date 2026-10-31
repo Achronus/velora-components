@@ -23,7 +23,11 @@ export const SearchMenuContext = createContext<SearchMenuContextValue | null>(
 	null,
 );
 
-const SearchMenuProvider = ({ children }: { children: React.ReactNode }) => {
+export const SearchMenuProvider = ({
+	children,
+}: {
+	children: React.ReactNode;
+}) => {
 	const [open, setOpenState] = useState(false);
 	const [query, setQuery] = useState("");
 	const [initialFilter, setInitialFilter] = useState<Filter>("all");
@@ -78,5 +82,3 @@ const SearchMenuProvider = ({ children }: { children: React.ReactNode }) => {
 
 	return <SearchMenuContext value={value}>{children}</SearchMenuContext>;
 };
-
-export default SearchMenuProvider;

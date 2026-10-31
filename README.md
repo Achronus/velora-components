@@ -1,6 +1,6 @@
 # Velora Components
 
-[Version]: v0.2.0
+[Version]: v0.2.1
 
 A React.js component library for Velora's frontend.
 
@@ -12,7 +12,7 @@ It holds the layout kit, charts and colour themes shared by every Velora app, ke
 |------|--------------|
 | Layout | `PageLayout`, `PageSidebar`, `PageHeader`, `RowLayout`, `RowSection`, `RowStack`, `StatStrip`, `Callout`, `TileGrid`, `Tile` |
 | Charts | `LineGraph`, `CellMap` |
-| Generic Components | `LiveDot`, `LiveStatusAnchor`, `Chip`, `ScopeBreadcrumb`, `FilterToggle`, `FilterToggleGroup` |
+| Generic Components | `LiveDot`, `LiveStatusAnchor`, `Swatch`, `ScopeBreadcrumb`, `FilterToggle`, `FilterToggleGroup` |
 | Search-based Components | `SearchBar`, `SearchDialog` |
 | Styles | `styles.css` (fonts, Tailwind setup, token mapping) and one file per colour theme |
 | Helpers | `readToken` for theme colours in JavaScript (canvas, three.js, chart libraries) |
@@ -30,16 +30,16 @@ Read more about the items in the [documentation](#).
 The library is installed from GitHub, not npm. Pin it to a release tag so every app builds against a known version:
 
 ```bash
-npm install git+https://github.com/Achronus/velora-components.git#v0.2.0
+npm install git+https://github.com/Achronus/velora-components.git#v0.2.1 --allow-git=all
 # or
-pnpm add git+https://github.com/Achronus/velora-components.git#v0.2.0
+pnpm add git+https://github.com/Achronus/velora-components.git#v0.2.1
 ```
 
 This adds the following to your `package.json`:
 
 ```json
 "dependencies": {
-  "@velora/components": "git+https://github.com/Achronus/velora-components.git#v0.2.0"
+  "@velora/components": "git+https://github.com/Achronus/velora-components.git#v0.2.1"
 }
 ```
 

@@ -1,12 +1,12 @@
-import type { Chip } from "../lib/types";
+import type { SwatchType } from "../lib/types";
 import { cn } from "../lib/utils";
 
 type Props = {
-	chip: Chip;
+	chip: SwatchType;
 	className?: string;
 };
 
-const Chip = ({ chip, className }: Props) => {
+export const Swatch = ({ chip, className }: Props) => {
 	return (
 		<span
 			aria-hidden
@@ -20,5 +20,3 @@ const Chip = ({ chip, className }: Props) => {
 		/>
 	);
 };
-
-export default Chip;

@@ -56,7 +56,7 @@ type Props = VariantProps<typeof bar> & {
 	className?: string;
 };
 
-const SearchBar = ({
+export const SearchBar = ({
 	placeholder = "Search",
 	size = "lg",
 	className,
@@ -116,5 +116,3 @@ const SearchBar = ({
 		</InputGroup>
 	);
 };
-
-export default SearchBar;
