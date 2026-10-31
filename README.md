@@ -10,8 +10,10 @@ It holds the layout kit, charts and colour themes shared by every Velora app, ke
 
 | Area | What's in it |
 |------|--------------|
-| Layout kit | `PageLayout`, `PageSidebar`, `PageHeader`, `RowLayout`, `RowSection`, `RowStack`, `StatStrip`, `Callout`, `TileGrid`, `Tile` |
+| Layout | `PageLayout`, `PageSidebar`, `PageHeader`, `RowLayout`, `RowSection`, `RowStack`, `StatStrip`, `Callout`, `TileGrid`, `Tile` |
 | Charts | `LineGraph`, `CellMap` |
+| Generic Components | `LiveDot`, `LiveStatusAnchor`, `Chip`, `ScopeBreadcrumb`, `FilterToggle`, `FilterToggleGroup` |
+| Search-based Components | `SearchBar`, `SearchDialog` |
 | Styles | `styles.css` (fonts, Tailwind setup, token mapping) and one file per colour theme |
 | Helpers | `readToken` for theme colours in JavaScript (canvas, three.js, chart libraries) |
 
