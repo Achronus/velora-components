@@ -45,7 +45,10 @@ export type Crumb = { module: ModuleFormat; id: ID; name: string };
 export type Tone = FromRegister<"tone", string, string>;
 
 export type Pill = { label: string; tone: Tone };
-export type Chip = { className: string; shape: "square" | "dot" | "outline" };
+export type SwatchType = {
+	className: string;
+	shape: "square" | "dot" | "outline";
+};
 
 export type HitBase = {
 	id: ID;
