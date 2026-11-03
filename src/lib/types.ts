@@ -4,6 +4,8 @@ export type Param = number | string | boolean;
 
 export type LiveStatus = "running" | "idle" | "offline";
 
+export type ListTableTone = "alarm" | "warn" | "live" | "nominal";
+
 export type KeyBind = {
 	hotkey: string;
 	name: string;
