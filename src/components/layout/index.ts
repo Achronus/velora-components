@@ -7,3 +7,4 @@ export * from "./RowSection";
 export * from "./RowStack";
 export * from "./StatStrip";
 export * from "./Tile";
+export * from "./ListTable";
