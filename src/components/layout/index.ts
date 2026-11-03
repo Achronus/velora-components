@@ -8,3 +8,4 @@ export * from "./RowStack";
 export * from "./StatStrip";
 export * from "./Tile";
 export * from "./ListTable";
+export * from "./PageSidebar";
