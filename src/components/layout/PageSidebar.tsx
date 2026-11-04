@@ -73,13 +73,10 @@ const PageSidebarItemAnchor = ({
 	);
 };
 
-const PageSidebarItemTitle = ({
-	className,
-	...props
-}: ComponentProps<"h1">) => {
+const PageSidebarItemLabel = ({ className, ...props }: ComponentProps<"p">) => {
 	return (
-		<h1
-			data-slot="page-sidebar-item-title"
+		<p
+			data-slot="page-sidebar-item-label"
 			className={cn(
 				"col-start-1 truncate group-has-data-[slot=page-sidebar-item-meta]/item:font-medium group-has-data-[slot=page-sidebar-item-meta]/item:text-text",
 				className,
@@ -89,12 +86,9 @@ const PageSidebarItemTitle = ({
 	);
 };
 
-const PageSidebarItemMeta = ({
-	className,
-	...props
-}: ComponentProps<"span">) => {
+const PageSidebarItemMeta = ({ className, ...props }: ComponentProps<"p">) => {
 	return (
-		<span
+		<p
 			data-slot="page-sidebar-item-meta"
 			className={cn(
 				"col-start-1 mt-0.75 truncate text-xs text-mute",
@@ -105,12 +99,9 @@ const PageSidebarItemMeta = ({
 	);
 };
 
-const PageSidebarItemCount = ({
-	className,
-	...props
-}: ComponentProps<"span">) => {
+const PageSidebarItemCount = ({ className, ...props }: ComponentProps<"p">) => {
 	return (
-		<span
+		<p
 			data-slot="page-sidebar-item-count"
 			className={cn(
 				"col-start-2 row-span-2 row-start-1 font-mono text-xs text-mute",
@@ -127,6 +118,6 @@ export {
 	PageSidebarHeading,
 	PageSidebarItemAnchor,
 	PageSidebarItemCount,
+	PageSidebarItemLabel,
 	PageSidebarItemMeta,
-	PageSidebarItemTitle,
 };
