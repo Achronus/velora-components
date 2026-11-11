@@ -2,7 +2,7 @@ export * from "./Callout";
 export * from "./PageHeader";
 export * from "./PageLayout";
 export * from "./PageSidebar";
-export * from "./RowLayout";
+export * from "./RowContainer";
 export * from "./RowSection";
 export * from "./RowStack";
 export * from "./StatStrip";
