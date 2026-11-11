@@ -6,6 +6,9 @@ export type LiveStatus = "running" | "idle" | "offline";
 
 export type ListTableTone = "alarm" | "warn" | "live" | "nominal";
 
+export type Line = { points: string; className: string; dash?: boolean };
+export type Band = { y: number; h: number; tone: "warn" | "alarm" };
+
 export type KeyBind = {
 	hotkey: string;
 	name: string;
